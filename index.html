@@ -1,20 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soulmate</title>
+    <title>Soulmate - Yossif & Marium</title>
     <style>
-        body { background-color: #F8F1E9; text-align: center; font-family: sans-serif; padding: 50px; }
-        h1 { color: #B25B5B; font-size: 40px; }
-        p { font-size: 20px; color: #555; }
-        .heart { font-size: 50px; color: red; margin: 20px; }
+        body {
+            background-color: #F8F1E9; 
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            color: #4A4A4A;
+        }
+        .container {
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #B25B5B;
+        }
+        h1 {
+            font-size: 28px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .message {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-style: italic;
+            background: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+        .image-box {
+            width: 100%;
+            height: 350px;
+            background-color: #ddd;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .stats {
+            display: flex;
+            gap: 10px;
+        }
+        .card {
+            background: white;
+            flex: 1;
+            padding: 15px;
+            border-radius: 20px;
+            border: 1px dashed #D1B5B5;
+        }
+        .card h3 { font-size: 12px; margin: 0; color: #999; }
+        .card div { font-size: 22px; font-weight: bold; color: #B25B5B; margin-top: 5px; }
+        .spotify {
+            margin-top: 30px;
+            display: block;
+            background: #1DB954;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="heart">❤️</div>
-    <h1>Yossif & Marium</h1>
-    <p>Our Story Starts Here: 1-1-2023</p>
-    <div class="heart">❤️</div>
+    <div class="container">
+        <header>
+            <div class="logo">Soulmate</div>
+            <div style="font-size: 12px; color: #999; border: 1px solid #ddd; padding: 4px 10px; border-radius: 20px;">Edit</div>
+        </header>
+
+        <h1>Yossif & Marium</h1>
+        
+        <p class="message">
+            "Every moment with you is a beautiful dream. ❤️<br>
+            Since 1-1-2023"
+        </p>
+
+        <div class="image-box">
+            <img src="https://via.placeholder.com/400x500?text=Upload+Your+Photo" alt="Memory">
+        </div>
+
+        <div class="stats">
+            <div class="card">
+                <h3>Since</h3>
+                <div>2023</div>
+            </div>
+            <div class="card">
+                <h3>Anniversary</h3>
+                <div>Jan 1st</div>
+            </div>
+        </div>
+
+        <a href="#" class="spotify">🎵 Our Special Song</a>
+        
+        <p style="margin-top: 30px; font-size: 11px; color: #ccc;">Made with Love</p>
+    </div>
 </body>
 </html>
